@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FE1800C41F0779D000C125B4 /* FLFormValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1800C21F0779D000C125B4 /* FLFormValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1800EC1F0785B600C125B4 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1800E81F0785B600C125B4 /* Form.swift */; };
+		FE1800ED1F0785B600C125B4 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1800E91F0785B600C125B4 /* String+Validation.swift */; };
+		FE1800EE1F0785B600C125B4 /* ValidationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1800EA1F0785B600C125B4 /* ValidationField.swift */; };
+		FE1800EF1F0785B600C125B4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1800EB1F0785B600C125B4 /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE1800BF1F0779D000C125B4 /* FLFormValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLFormValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1800C21F0779D000C125B4 /* FLFormValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLFormValidator.h; sourceTree = "<group>"; };
 		FE1800C31F0779D000C125B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1800E81F0785B600C125B4 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		FE1800E91F0785B600C125B4 /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		FE1800EA1F0785B600C125B4 /* ValidationField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationField.swift; sourceTree = "<group>"; };
+		FE1800EB1F0785B600C125B4 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,10 @@
 		FE1800C11F0779D000C125B4 /* FLFormValidator */ = {
 			isa = PBXGroup;
 			children = (
+				FE1800E81F0785B600C125B4 /* Form.swift */,
+				FE1800E91F0785B600C125B4 /* String+Validation.swift */,
+				FE1800EA1F0785B600C125B4 /* ValidationField.swift */,
+				FE1800EB1F0785B600C125B4 /* Validator.swift */,
 				FE1800C21F0779D000C125B4 /* FLFormValidator.h */,
 				FE1800C31F0779D000C125B4 /* Info.plist */,
 			);
@@ -96,6 +108,7 @@
 					FE1800BE1F0779D000C125B4 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = NY45473NT8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1800EF1F0785B600C125B4 /* Validator.swift in Sources */,
+				FE1800EC1F0785B600C125B4 /* Form.swift in Sources */,
+				FE1800EE1F0785B600C125B4 /* ValidationField.swift in Sources */,
+				FE1800ED1F0785B600C125B4 /* String+Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +259,7 @@
 		FE1800C81F0779D000C125B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NY45473NT8;
@@ -254,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.FLFormValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +280,7 @@
 		FE1800C91F0779D000C125B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NY45473NT8;
@@ -296,6 +316,7 @@
 				FE1800C91F0779D000C125B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
